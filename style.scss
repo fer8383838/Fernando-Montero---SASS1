@@ -41,6 +41,35 @@ header {
     height: auto;  
 }
 
+.contenedor-blog {
+	margin: auto;
+	display: table;
+    background-color: tomato;
+}
+
+h1 { 
+	position: relative; 
+	float: left;
+	background: white;
+	color: black;
+	font-size: 2.5em;
+    font-family: monospace; 
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: white;
+    border-left: 2px solid #000;
+    animation: escribir 3s steps(34);
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
 .contenedor {
     width: 90%;
     margin: 0 auto;
@@ -120,24 +149,30 @@ section {
     
 }
 img {
-    width: 60%;
     display: block;
     margin: auto;
-    border-style: solid;
-    border-color: red;
+    width: 40%;
     background-size: cover;
     margin-top: 40px;
+    border-radius: 10%;
+    
 }
 .img {
-    height: 200px;
-    border-style: solid;
-    border-color: red;
     background-size: cover;
+    padding-top: 10px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
   }
 
 main {
     text-align: center;
     padding-bottom: 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
 
 }
 
@@ -247,4 +282,11 @@ footer {
 
 .alinear-derecha {
     justify-content: flex-end;
+}
+
+.img:hover {
+    transform:scale(2);   
+}
+.img {
+    overflow:hidden;
 }

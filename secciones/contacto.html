@@ -60,17 +60,17 @@
     
                         <div class="campo">
                             <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                            <input  name="nombre" class="imput1 input-text" type="text" id="nombre" placeholder="Nombre" required>
                         </div>
                     
                         <div class="campo">
                             <label>Teléfono</label>
-                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                            <input name="telefono" class="imput1 input-text" type="text" id="tel" placeholder="telefono" required>
                         </div>
                         
                         <div class="campo">
                             <label>Correo</label>
-                            <input class="input-text" type="email" placeholder="Tu Email">
+                            <input name="correo" class="imput1 input-text" type="email" id="correo" placeholder="Tu Email"  required>
                         </div>
 
                         <select class="campo" name="EstadoCivil">
@@ -79,17 +79,17 @@
                         </select>
                         <div class="campo">
                             <label for="check" class="desea">Desea recibir anuncios a su correo</label>
-                            <input type="checkbox" name="check">
+                            <input class="imput1" type="checkbox" name="check">
                         </div>
                         
                         <div class="campo">
                             <label>Mensaje</label>
-                            <textarea class="input-text"></textarea>
+                            <textarea name="comentarios" id="comentarios" placeholder="escribe tu comentario" class="imput1 input-text" cols="30"></textarea>
                         </div>
                     </div> <!-- .contenedor-campos -->
                     
                     <div class="alinear-derecha flex"> <!-- video43 -->
-                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                        <input id="boton1" class="boton w-sm-100" type="submit" value="Enviar">
                     </div>
     
                     
